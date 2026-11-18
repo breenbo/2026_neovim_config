@@ -5,5 +5,9 @@ return {
   "luckasRanarison/tailwind-tools.nvim",
   build = ":UpdateRemotePlugins",
   dependencies = { "nvim-treesitter/nvim-treesitter" },
-  opts = {},
+  ft = { "html", "vue" },
+  -- override=true rappelle lspconfig.tailwindcss.setup() avec tous les
+  -- filetypes par defaut, ce qui annule la restriction html/vue de
+  -- tailwindcss.lua. Les pastilles/tri passent par LspAttach, pas par ce setup.
+  opts = { server = { override = false } },
 }

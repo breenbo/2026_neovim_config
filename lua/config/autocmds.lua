@@ -6,6 +6,3 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
-
--- Preview des .svg dans un split sous le code (:SvgPreview pour basculer)
-require("svg_preview").setup()
